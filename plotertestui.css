@@ -1,0 +1,106 @@
+ #inputfunc{
+   
+  /* 
+  margin-left: 0rem;*/
+  outline:none;
+  position:static;
+  font-size: 24px;
+  
+    padding:0.3em 0em;
+    /*transform: translateX(-15px) translateY(8px);*/
+    
+}
+#dmnstart,#dmnend{
+  padding:0; text-align:center; 
+    outline:none;
+}
+#plot-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    position: absolute;
+    top: 75%;
+
+}
+#plotbtn{
+  border: solid 2px rgba(0,112,243,0.5);
+  border-radius: 5px;
+  padding: 0;
+  font-size: 20px;
+  margin-right: 20px;
+  background: none;
+  font-family: 'Artifika', serif;
+  color:rgb(0,112,243);
+  transition: all 300ms;
+  outline:none;
+}
+#plotbtn:hover{
+  cursor: pointer;
+  background-color: rgba(0,112,243,0.8);
+  color:#fff;
+  box-shadow: 0 2px 6px 0 rgba(0,112,243,0.8), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
+
+  }
+  #plotbtn:active{
+    transform:translateY( 1.5px);
+  }
+
+#workspace{
+  background-color:#fdfcfc;
+  padding-bottom: 0;
+  transition: all 100ms;
+}
+#navbarmain{
+  background: #fdfcfc;
+z-index:9999;
+ /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+
+}
+
+#plotarea{
+  margin:0 0 0 2em;
+
+}
+.dropdown-toggle::after {
+            content: none;
+        }
+
+.btn-round{
+  border-radius: 50%;
+  width:30px;
+  height: 30px;
+  padding:0;
+  margin:0.3rem 0.3rem;
+
+
+}
+/*dark mode classes*/
+
+
+.dark-bg{                           /*to be applied to navbar, controls, workspace, and input fields*/ 
+    background-color: #25232D!important;
+    color: #fdfcfc;
+}
+.bg-dark{
+  background-color: #26242E!important;
+}
+
+.navbar{
+  transition: all 100ms;
+}
+
+#controls{
+  transition: all 100ms;
+  margin:0;
+ /*border:rgb(82,154,226) 2px solid;*/
+  background-color: #fdfcfc;
+  z-index: 9;
+  border-radius: 10px!important;
+  
+}
+body{
+  background-color: #fdfcfc;
+  image-rendering: high-quality;
+  transition: all 100ms;
+}
