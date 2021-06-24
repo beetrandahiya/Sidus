@@ -53,7 +53,7 @@
 }
 #navbarmain{
   background: #fdfcfc;
-z-index:9999;
+z-index:99;
  /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
 
 }
@@ -95,7 +95,7 @@ z-index:9999;
   margin:0;
  /*border:rgb(82,154,226) 2px solid;*/
   background-color: #fdfcfc;
-  z-index: 9;
+  z-index: 0;
   border-radius: 10px!important;
   
 }
