@@ -46,7 +46,7 @@ Its Super Simple to use
 
 
 
-#### Prakrisht Dahiya </a>
+### Prakrisht Dahiya </a>
 <div padding="8px">
 <a href="https://www.instagram.com/prakrishtdahiya/"><img src='content/description/icons8-instagram-48.png' width="48px" hspace="8" ></a>    
 <a href="mailto:beetrandahiya@gmail.com"><img src="content/description/icons8-gmail-48.png" width="48px" hspace="8"></a>
