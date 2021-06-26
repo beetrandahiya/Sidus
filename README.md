@@ -19,7 +19,6 @@ The Intuitive input shows you drawn functions as you would write them on paper r
 
 <img src='content/description/dark_light_mode.png' width='1080 px' >
 </div>
-<hr>
 
 ## Using Sidus
 
@@ -30,7 +29,6 @@ Its Super Simple to use
 2. Input the domain of x.
 3. Voila! You get the graph of exactly what you want.
 
-<hr>
 
 ### Interact with your Graph
 
@@ -38,7 +36,7 @@ Its Super Simple to use
 * <img src='content/description/zoom.PNG' width='32 px ' style='transform: translateY(8px);' > Zoom in to see details.
 * <img src='content/description/snip.PNG' width='32 px ' style='transform: translateY(8px);' > Save a png image of what you just plotted
 * <img src='content/description/home.PNG' width='32 px ' style='transform: translateY(8px);' > Go back to default view.
-<hr>
+
 
 ## Know the Creator
 <div align='center'> 
@@ -61,5 +59,5 @@ Its Super Simple to use
 [You can suggest features and point out bugs here](https://github.com/beetrandahiya/Sidus/issues)
 
 ## License
-[MIT License](../blob/master/LICENSE)
+This project is licensed under the [MIT License](../blob/master/LICENSE)
 
