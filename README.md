@@ -3,13 +3,13 @@
 <img src='content/description/main_light.png' width='1080 px' >
 
 # Sidus
-Sidus is a simple , user friendly and fast mathematical function plotter on web.
+###### Sidus is a simple , user friendly and fast mathematical function plotter on web.
 <hr>
 <img src='content/description/intuitive_input.png' width='1080 px' >
 <div style='  display: grid; grid-template-columns: 50% 50% ; text-align:left; '>
 <div style='padding: 30px 0;'>
 
-##### The Intuitive input shows you drawn functions as you would write them on paper rather than squeezing everthing on a single line.
+###### The Intuitive input shows you drawn functions as you would write them on paper rather than squeezing everthing on a single line.
 </div>
 <div >
 
@@ -42,9 +42,13 @@ Its Super Simple to use
 
 ## Know the Creator
 <div align='center'> 
-<img src='https://avatars.githubusercontent.com/u/63427355?v=4' style='border-radius:50%; border: 4px dashed #D33B9A;' width='94px'>
+<div class='gradient_box'><a src='https://www.github.com/beetrandahiya' style='color:#D33B9A;'> 
+<img src='https://avatars.githubusercontent.com/u/63427355?v=4' style='border-radius:50%;' width='94px'>
+</div>
 
-[Prakrisht Dahiya](https://www.github.com/beetrandahiya)
+
+
+#### Prakrisht Dahiya </a>
 <div padding="8px">
 <a href="https://www.instagram.com/prakrishtdahiya/"><img src='content/description/icons8-instagram-48.png' width="48px" hspace="8" ></a>    
 <a href="mailto:beetrandahiya@gmail.com"><img src="content/description/icons8-gmail-48.png" width="48px" hspace="8"></a>
@@ -56,3 +60,18 @@ Its Super Simple to use
 </div>
 ## License
 [MIT License](../blob/master/LICENSE)
+
+<style>
+.gradient_box{
+     max-width: 94px;
+     max-height: 94px;
+  padding: 0.4rem;
+  position: relative;
+  background: linear-gradient(to right, #D33B9A, purple);
+  border-radius:50%;
+  transition: all 0.3s ease;
+}
+.gradient_box:hover{
+     box-shadow:0 0 10px purple;
+}
+    </style>
