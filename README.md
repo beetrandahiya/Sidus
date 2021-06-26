@@ -34,10 +34,10 @@ Its Super Simple to use
 
 ### Interact with your Graph
 
-* <img src='content/description/pan.png' width='32 px ' style='transform: translateY(8px);' > Pan around the graph as you will.
-* <img src='content/description/zoom.png' width='32 px ' style='transform: translateY(8px);' > Zoom in to see details.
-* <img src='content/description/snip.png' width='32 px ' style='transform: translateY(8px);' > Save a png image of what you just plotted
-* <img src='content/description/home.png' width='32 px ' style='transform: translateY(8px);' > Go back to default view.
+* <img src='content/description/pan.png' width='24 px '  > Pan around the graph as you will.
+* <img src='content/description/zoom.png' width='24 px '  > Zoom in to see details.
+* <img src='content/description/snip.png' width='24 px '  > Save a png image of what you just plotted
+* <img src='content/description/home.png' width='24 px '  > Go back to default view.
 <hr>
 
 ## Know the Creator
@@ -62,7 +62,8 @@ Its Super Simple to use
 ## License
 [MIT License](../blob/master/LICENSE)
 
-<style>
+(setq markdown-xhtml-header-content
+      "<style>
 .gradient_box{
      max-width: 94px;
      max-height: 94px;
@@ -75,4 +76,4 @@ Its Super Simple to use
 .gradient_box:hover{
      box-shadow:0 0 10px purple;
 }
-    </style>
+    </style>")
