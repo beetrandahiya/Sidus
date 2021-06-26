@@ -42,9 +42,7 @@ Its Super Simple to use
 
 ## Know the Creator
 <div align='center'> 
-<div class='gradient_box'><a src='https://www.github.com/beetrandahiya' style='color:#D33B9A;'> 
-<img src='https://avatars.githubusercontent.com/u/63427355?v=4' style='border-radius:50%;' width='94px'>
-</div>
+
 
 
 
@@ -59,21 +57,9 @@ Its Super Simple to use
 </div>
 </div>
 
+## Issues and Suggestions
+[You can suggest features and point out bugs here](https://github.com/beetrandahiya/Sidus/issues)
+
 ## License
 [MIT License](../blob/master/LICENSE)
 
-(setq markdown-xhtml-header-content
-      "<style>
-.gradient_box{
-     max-width: 94px;
-     max-height: 94px;
-  padding: 0.4rem;
-  position: relative;
-  background: linear-gradient(to right, #D33B9A, purple);
-  border-radius:50%;
-  transition: all 0.3s ease;
-}
-.gradient_box:hover{
-     box-shadow:0 0 10px purple;
-}
-    </style>")
