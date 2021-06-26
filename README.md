@@ -34,10 +34,10 @@ Its Super Simple to use
 
 ### Interact with your Graph
 
-* <img src='content/description/pan.PNG' width='24 px '  > Pan around the graph as you will.
-* <img src='content/description/zoom.PNG' width='24 px '  > Zoom in to see details.
-* <img src='content/description/snip.PNG' width='24 px '  > Save a png image of what you just plotted
-* <img src='content/description/home.PNG' width='24 px '  > Go back to default view.
+* <img src='content/description/pan.PNG' width='32 px ' style='transform: translateY(8px);' > Pan around the graph as you will.
+* <img src='content/description/zoom.PNG' width='32 px ' style='transform: translateY(8px);' > Zoom in to see details.
+* <img src='content/description/snip.PNG' width='32 px ' style='transform: translateY(8px);' > Save a png image of what you just plotted
+* <img src='content/description/home.PNG' width='32 px ' style='transform: translateY(8px);' > Go back to default view.
 <hr>
 
 ## Know the Creator
