@@ -2,8 +2,8 @@
 <div align='center'>
 <img src='content/description/main_light.png' width='1080 px' >
 
-# Sidus
-###### Sidus is a simple , user friendly and fast mathematical function plotter on web.
+
+ Sidus is a simple , user friendly and fast mathematical function plotter on web.
 <hr>
 <img src='content/description/intuitive_input.png' width='1080 px' >
 <div style='  display: grid; grid-template-columns: 50% 50% ; text-align:left; '>
