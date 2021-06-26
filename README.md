@@ -38,3 +38,21 @@ Its Super Simple to use
 * <img src='content/description/zoom.png' width='32 px ' style='transform: translateY(8px);' > Zoom in to see details.
 * <img src='content/description/snip.png' width='32 px ' style='transform: translateY(8px);' > Save a png image of what you just plotted
 * <img src='content/description/home.png' width='32 px ' style='transform: translateY(8px);' > Go back to default view.
+<hr>
+
+## Know the Creator
+<div align='center'> 
+<img src='https://avatars.githubusercontent.com/u/63427355?v=4' style='border-radius:50%; border: 4px dashed #D33B9A;' width='94px'>
+
+[Prakrisht Dahiya](https://www.github.com/beetrandahiya)
+<div padding="8px">
+<a href="https://www.instagram.com/prakrishtdahiya/"><img src='content/description/icons8-instagram-48.png' width="48px" hspace="8" ></a>    
+<a href="mailto:beetrandahiya@gmail.com"><img src="content/description/icons8-gmail-48.png" width="48px" hspace="8"></a>
+<a href="https://dribbble.com/beetran/"><img src='content/description/Dribbble_icon.png' width="48px" hspace="8" ></a> 
+<a href="https://www.behance.net/prakrishtdahiya"><img src='content/description/icons8-behance.png' width="48px" hspace="8" ></a> 
+<a href="https://codepen.io/beetran"><img src='content/description/Codepen.png' width="48px" hspace="8" ></a> 
+<a href="https://www.deviantart.com/beetrandahiya"><img src='content/description/icons8-deviantart-48.png' width="48px" hspace="8" ></a> 
+</div>
+</div>
+## License
+[MIT License](../blob/master/LICENSE)
