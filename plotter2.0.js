@@ -11,13 +11,14 @@ while (j < 100) {
 clcktm = 0;
 
 
+
 document.getElementById('inputfunc').addEventListener('input', (ev) => {
     // `ev.target` is an instance of `MathfieldElement`
     funcinp = ev.target.getValue('ascii-math');
 });
 document.getElementById('inputfunc').setOptions({
   virtualKeyboardMode: "auto",
-  virtualKeyboards: 'numeric symbols'
+  virtualKeyboards: 'numeric functions'
 });
 
 

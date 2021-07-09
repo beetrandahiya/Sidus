@@ -23,6 +23,9 @@
     top: 75%;
 
 }
+
+
+
 #plotbtn{
   border: solid 2px rgba(0,112,243,0.5);
   border-radius: 5px;
@@ -62,6 +65,17 @@ z-index:99;
   margin:0 0 0 2em;
 
 }
+
+@media screen and (orientation: portrait) {
+  #plotarea{
+    width:100%;
+    margin:0;
+  
+  }
+
+
+
+}
 .dropdown-toggle::after {
             content: none;
         }
@@ -72,7 +86,6 @@ z-index:99;
   height: 30px;
   padding:0;
   margin:0.3rem 0.3rem;
-
 
 }
 /*dark mode classes*/
