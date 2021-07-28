@@ -24,12 +24,15 @@ document.getElementById('inputfunc').setOptions({
 
 
 function plotgraph() {
+    wrkwdth = $("#workspace").width();
+    wrkwdth = wrkwdth - 50;
+    wrkrng = wrkwdth / 60;
 
     funcinp.trim();
     funcinp = funcinp.replace(/⋅/g, "*");
 
-    var dmnstart = parseFloat(document.getElementById("dmnstart").value);
-    var dmnend = parseFloat(document.getElementById("dmnend").value);
+    var dmnstart = -wrkrng
+    var dmnend = wrkrng
 
     const expr = math.compile(funcinp);
     xValues = math.range(dmnstart, dmnend, 0.01).toArray();
@@ -126,10 +129,7 @@ function plotgraph() {
 
     */
     //////////////////////////////////////////////////////////////////////////////////////////
-    wrkwdth = $("#workspace").width();
-    wrkwdth = wrkwdth - 50;
-    wrkrng = wrkwdth / 60;
-
+    
     var plotline = { //making plot dataset
         x: xValues,
         y: yValues,
@@ -235,8 +235,136 @@ function plotgraph() {
             }
         })
     }
+    var plotarea1 = document.getElementById('plotarea');
+    plotarea1.on('plotly_relayout', function(){
+        dmnstart=layout.xaxis.range[0];
+        dmnend=layout.xaxis.range[1];
+        console.log(dmnstart,dmnend);
+        console.log(dmnstart-dmnend);
+        xValues = math.range(dmnstart, dmnend, (dmnend-dmnstart)/4000).toArray();
+        if(dmnend-dmnstart>5){
+        xValues = xValues.map(a => parseFloat(a.toFixed(2)));
+        i = 0;};
+        while (i < xValues.length) {
+            if (pivltr.includes(xValues[i])) {
+                j = pivltr.indexOf(xValues[i]);
+                xValues[i] = pivl[j];
+            }
+            i++;
+        }
+        const yValues = xValues.map(function (x) {
+            return expr.evaluate({
+                x: x
+            })
+        });
 
+        
+    ///////////////////////   find infinities and roots ////////////////////////////////////////////////
+    k = 0;
+    rootsx = [];
+    rootsy = [];
+    while (k < yValues.length) {
+        if (yValues[k] > (10 ** 15)) { //positive infinity
+            yValues[k] = Infinity;
+        };
+        if (yValues[k] < -(10 ** 15)) { //negative infinity
+            yValues[k] = -Infinity;
+        }
+
+        if (yValues[k] == 0) { //roots  --> y=0
+            rootsx.push(xValues[k]);
+            rootsy.push(yValues[k]);
+        }
+        if (Math.abs(yValues[k]) < (10 ** -12)) { //roots  ----> abs(y)< 10^-12
+            yValues[k] = 0;
+            rootsx.push(xValues[k]);
+            rootsy.push(yValues[k]);
+        }
+        k++;
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    /////////////////////////////////////////   continuity   /////////////////////////////////
+    /*method of calculating limit is not very basic, but works 
+
+    rhl= lim(a+)f(x)
+    lhl= lim(a-)f(x)
+    limvl=  (rhl+lhl)/2
+
+    continous if =>  limvl = f(a)  [both rounded to 2 decimals]
+    */
+    /////////////todo------>> categorize among jump, removable, infinite discontinuity
+
+
+
+
+    discntpoints = []; //to count discontinous points
+
+    k = 0;
+    while (k < yValues.length) {
+
+        rhl = expr.evaluate({
+            x: xValues[k] + 0.000000001
+        });
+        lhl = expr.evaluate({
+            x: xValues[k] - 0.000000001
+        });
+
+        if (!(isNaN(rhl) || isNaN(lhl))) {
+
+
+            limvl = parseFloat(((rhl + lhl) / 2).toFixed(2))
+            fval = parseFloat(parseFloat(yValues[k]).toFixed(2))
+
+
+
+            if (fval != limvl) {
+                yValues[k] = NaN;
+                discntpoints.push(xValues[k]);
+            }
+
+
+
+        }
+        k++;
+    }
+    
+
+        var plotline = { //making plot dataset
+            x: xValues,
+            y: yValues,
+            name: funcinp,
+            type: 'scatter',
+            showlegend: false,
+            line: {
+                color: 'rgba(82,154,226, 0.8)'
+            }
+        };
+    
+        var roots = { //making roots dataset
+            x: rootsx,
+            y: rootsy,
+            name: 'root',
+            type: 'scatter',
+            mode: 'markers',
+            marker: {
+                color: 'rgba(82,154,226, 1)',
+                size: 5
+            },
+            showlegend: false
+        };
+        data = [plotline, roots];
+        Plotly.react('plotarea', data, layout, {
+            displaylogo: false,
+            scrollZoom: true,
+            responsive: true,
+            modeBarButtonsToRemove: ['select2d', 'lasso2d', 'autoScale2d', 'toggleSpikelines', 'hoverClosestCartesian', 'hoverCompareCartesian']
+        });
+
+    });
 }
+
 
 //////////////////////////////////////// find derivative ////////////////////////////////////////
 
