@@ -12,6 +12,7 @@ clcktm = 0;
 
 
 
+
 document.getElementById('inputfunc').addEventListener('input', (ev) => {
     // `ev.target` is an instance of `MathfieldElement`
     funcinp = ev.target.getValue('ascii-math');
