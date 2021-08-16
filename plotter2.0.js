@@ -239,8 +239,7 @@ function plotgraph() {
     plotarea1.on('plotly_relayout', function(){
         dmnstart=layout.xaxis.range[0];
         dmnend=layout.xaxis.range[1];
-        console.log(dmnstart,dmnend);
-        console.log(dmnstart-dmnend);
+       
         xValues = math.range(dmnstart, dmnend, (dmnend-dmnstart)/4000).toArray();
         if(dmnend-dmnstart>5){
         xValues = xValues.map(a => parseFloat(a.toFixed(2)));
@@ -385,7 +384,6 @@ function findderivative() {
         //calculating derivative
         deriv = math.derivative(funcinp, 'x'); //calculating derivative in advance
         derivc = deriv.compile();
-        // console.log(derivc.evaluate({x:0}));
         derivstr = deriv.toString();
         const derivValues = xValues.map(function (x) {
             return derivc.evaluate({
