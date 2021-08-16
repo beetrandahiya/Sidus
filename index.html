@@ -77,31 +77,22 @@
     </div>
     <div class="container-fluid mb-0">
         <div class="row h-100">
-            <div class="col-md-4 col-12 col-lg-3 sidebar align-items-center h-md-100 h-30 p-3  bg-white shadow-sm rounded-top"
-                id="controls">
-                <ul class="nav flex-column">
-                    <li class="nav-item mt-2 mb-2">
-                        <span class="row pb-2 mb-1">
-                            <span class="col-3 mt-2 mb-2" style="font-family: 'Artifika', serif;font-size: 25px; ">f(x)=
-                            </span>
-                            <math-field class="col-8" id="inputfunc" onchange="plotgraph()"></math-field>
-                        </span>
+            <div class="col-md-4 col-12 col-lg-3 h-md-100 p-2 " id="controls">
+                <ul class="w-100 p-0" id="functionslist">
+                    <!--<li><button class="col-2 p-0 butn" id="addfuncbtn">+</button> </li>-->
+
+                    <li class=" mt-2 mb-1 row funcitem m-2">
+
+                        <div class="col-2 text-center p-0 pt-2 funcnot">f(x) =</div> 
+                        
+                        <math-field class="col-8 p-0 " id="inputfunc" onchange="plotgraph()">ax+x^2</math-field>
+                        
+                        <button class="col-2 p-0 butn" onClick="findderivative()">f'(x)</button> 
+
                     </li>
-                    <li class="nav-item">
-                        <span class="row text-center justify-content-center">
-                            <button id="plotbtn" class="col-1 text-center" onClick="findderivative()">f'</button> <input
-                                type="text" id="dmnstart" class="col-2 pt-1 pb-1 border rounded "
-                                onchange="plotgraph()">
-                            <span class="col-sm-3  col-3 pt-1 pb-1 "
-                                style="font-size: 20px; font-family: 'Artifika', serif;">≤ x ≤</span>
-                            <input type="text" id="dmnend" class="col-2 pt-1 pb-1 border rounded "
-                                onchange="plotgraph()">
-                        </span>
-                    </li>
+                    
                 </ul>
-                <!-- <div class="fixed-bottom justify-content-center" id="plot-container" style="box-sizing: border-box;;">
-                    <button id="plotbtn">Plot</button>
-                </div>-->
+               
             </div>
             <main class="col-md-8 col-12 col-lg-9 h-md-100" id="workspace">
                 <div id="plotarea"></div>
