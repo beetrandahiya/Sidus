@@ -440,8 +440,7 @@ function toggledark() {
     $("body").toggleClass("dark-bg");
     $(".navbar").toggleClass("dark-bg"); //navbar
     $(".navbar").toggleClass("text-white");
-    $("#dmnstart").toggleClass("dark-bg"); //domain inputs
-    $("#dmnend").toggleClass("dark-bg");
+  
     $("#workspace").toggleClass("dark-bg"); //workspace
 
     // $("#controls").toggleClass("bg-dark");
