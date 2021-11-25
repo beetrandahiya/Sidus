@@ -44,21 +44,24 @@ z-index:99;
 }
 
 .butn{
-  background: #06f;
-  border:none;
+  background: transparent;
+  border:rgba(0,150,255,0.5) solid 2px;
   border-radius:10px;
   font-size:14px;
   font-family: Inter,sans-serif;
-  color:white;
+  color:rgba(0,150,255,0.5);
   font-weight: 600;
   outline: none;
   cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 .butn:focus{
   outline: none;
 }
 .butn:hover{
-  background: #005ce6;
+  background: rgba(0,150,255,0.3);
+  color: #fdfcfc;
+  border: rgba(0,150,255,0.5) solid 3px;
 }
 @media screen and (orientation: portrait) {
   #plotarea{
@@ -85,6 +88,8 @@ z-index:99;
   margin:0.3rem 0.3rem;
 
 }
+
+
 /*dark mode classes*/
 
 
