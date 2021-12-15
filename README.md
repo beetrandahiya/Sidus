@@ -26,8 +26,7 @@ This is the best part about Sidus.
 Its Super Simple to use
 
 1. Input the function, just as you would write it on paper.
-2. Input the domain of x.
-3. Voila! You get the graph of exactly what you want.
+2. Voila! You get the graph of exactly what you want.
 
 
 ### Interact with your Graph
