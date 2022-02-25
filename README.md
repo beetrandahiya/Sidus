@@ -9,7 +9,7 @@
 <div style='  display: grid; grid-template-columns: 50% 50% ; text-align:left; '>
 <div style='padding: 30px 0;'>
 
-The Intuitive input shows you drawn functions as you would write them on paper rather than squeezing everthing on a single line.
+The Intuitive input shows you drawn functions as you would write them on paper rather than squeezing everything on a single line.
 </div>
 <div background='#222'>
 
